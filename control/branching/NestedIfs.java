@@ -1,4 +1,4 @@
-package monday;
+package control.branching;
 
 public class NestedIfs {
 	public static void main(String[] args) {

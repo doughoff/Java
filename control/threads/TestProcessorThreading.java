@@ -1,4 +1,4 @@
-package threads;
+package control.threads;
 
 public class TestProcessorThreading implements Runnable {
 

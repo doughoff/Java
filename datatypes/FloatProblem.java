@@ -16,7 +16,5 @@ public class FloatProblem {
 		BigDecimal b1 = new BigDecimal("4321456.31"); 
 		BigDecimal c1 = a1.add(b1);
 		System.out.println(NumberFormat.getCurrencyInstance().format(c1));
-
-
 	}
 }

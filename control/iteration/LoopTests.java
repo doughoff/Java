@@ -1,4 +1,4 @@
-package monday;
+package control.iteration;
 
 public class LoopTests {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package threads;
+package control.threads;
 
 public class ThreadLambda {
 	static void process() {

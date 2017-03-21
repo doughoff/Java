@@ -2,7 +2,7 @@
  * My first class
  * monday.HelloWorld.java
  */
-package monday;
+package basics;
 
 /**
  * 
