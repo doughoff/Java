@@ -1,39 +1,10 @@
-package thursday;
+package datatypes;
 
 import java.util.Arrays;
 
-public class Egg {
-	// ----------------------------- data definition
-	private String color;
-	private String size;
-	private boolean isBad;
+import entities.Egg;
 
-	// ---------------------------- getters and setters
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-	public String getSize() {
-		return size;
-	}
-
-	public void setSize(String size) {
-		this.size = size;
-	}
-
-	public boolean isBad() {
-		return isBad;
-	}
-
-	public void setBad(boolean isBad) {
-		this.isBad = isBad;
-	}
-	// ----------------------------- processes
-
+public class EggArray {
 	// ----------------------------- testing
 	public static void main(String[] args) {
 		// make an array of eggs
@@ -47,8 +18,9 @@ public class Egg {
 		truck[0] = crate;
 
 		System.out.println(truck[0][0][2]);
-		truck[0][0][2].color = "white";
-		truck[0][0][2].size = "Large";
+		truck[0][0][2].setColor("white");
+		truck[0][0][2].setSize("Large");
+		
 		System.out.println(truck.length);
 		System.out.println(truck[truck.length - 1]); // last place on truck
 		System.out.println(truck);
