@@ -1,4 +1,4 @@
-package tuesday;
+package formatting;
 
 public class NumberFormats {
 	public static void main(String[] args) {

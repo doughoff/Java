@@ -1,6 +1,6 @@
-package datatypes;
+package datatypes.strings;
 
-public class ConcatProfiler {
+public class StringBuilderProfiler {
 	public static void main(String[] args) {
 		String aString = "abc", bString = "def";
 		StringBuilder sb = new StringBuilder("abc");

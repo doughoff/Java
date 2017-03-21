@@ -1,4 +1,4 @@
-package tuesday;
+package basics;
 
 public class DivisionTests {
 	public static void main(String[] args) {

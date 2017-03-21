@@ -1,9 +1,4 @@
-/*
- * My first class
- * monday.HelloWorld.java
- */
 package basics;
-
 /**
  * 
  * @author Doug Hoff
@@ -11,7 +6,7 @@ package basics;
  */
 public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Hello, world!"); // console output
-		System.err.println("This is an error.");
+		System.out.println("Hello, world!"); 		// console out output
+		System.err.println("This is an error.");	// console err output
 	} // end main
 } // end class

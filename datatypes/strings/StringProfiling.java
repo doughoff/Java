@@ -1,4 +1,4 @@
-package datatypes;
+package datatypes.strings;
 
 public class StringProfiling {
 	public static void main(String[] args) {
