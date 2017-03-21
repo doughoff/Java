@@ -1,4 +1,4 @@
-package wednesday;
+package methods;
 
 public class StaticMethods {
 	//------------------------------------ data

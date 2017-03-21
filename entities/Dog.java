@@ -1,11 +1,13 @@
-package wednesday;
+package entities;
+
+import entities.Person;
 
 public class Dog {
 	//--------------------------------- data definition
 	private String breed;
 	private String name;
-	
 	private Person owner;
+	
 	//--------------------------------- processes
 	public void printInfo() {
 		System.out.printf("I'm a %s dog named %s owned by...",

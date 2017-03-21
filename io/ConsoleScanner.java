@@ -1,4 +1,4 @@
-package tuesday;
+package io;
 
 import java.util.Scanner;
 

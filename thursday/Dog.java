@@ -1,6 +1,6 @@
 package thursday;
 
-import wednesday.Person;
+import entities.Person;
 
 public class Dog {
 	//---------------------------------- data definition

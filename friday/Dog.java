@@ -1,5 +1,5 @@
 package friday;
-import wednesday.Person;
+import entities.Person;
 
 public class Dog {
 	//----------------------------------- data structure

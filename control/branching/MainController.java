@@ -1,4 +1,4 @@
-package wednesday;
+package control.branching;
 
 public class MainController {
 	public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class MainController {
 		basics.HelloWorld.main(null);
 		
 		printIntermissionMessage();
-		wednesday.MainController.printIntermissionMessage();
+		control.branching.MainController.printIntermissionMessage();
 		
 		String message = "It's time for a break.";
 		printIntermissionMessage(message);
