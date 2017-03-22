@@ -3,14 +3,14 @@ package collections;
 import java.awt.GraphicsEnvironment;
 import java.util.*;
 
-public class FontNames {
+public class SystemFontNames {
 	public static List<String> list;
 	static {
 		String[] fontNamesInSystemArray = 
 				GraphicsEnvironment
 				.getLocalGraphicsEnvironment()
 				.getAvailableFontFamilyNames();
-		FontNames.list = Arrays.asList(fontNamesInSystemArray);
+		SystemFontNames.list = Arrays.asList(fontNamesInSystemArray);
 	}
 	
 }
