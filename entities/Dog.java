@@ -1,12 +1,12 @@
 package entities;
 
-import entities.Person;
+import entities.PersonSimple;
 
 public class Dog {
 	//--------------------------------- data definition
 	private String breed;
 	private String name;
-	private Person owner;
+	private PersonSimple owner;
 	
 	//--------------------------------- processes
 	public void printInfo() {
@@ -19,7 +19,7 @@ public class Dog {
 		Dog rover = new Dog();
 		rover.breed = "Pug";
 		rover.name = "Rover";
-		rover.owner = new Person();
+		rover.owner = new PersonSimple();
 		// rover.owner.name = "Doug";
 		rover.owner.setInfo("Doug", 22, false);
 		rover.owner.printInfo();

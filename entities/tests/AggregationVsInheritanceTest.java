@@ -1,6 +1,10 @@
-package friday;
+package entities.tests;
 
-public class TestingOperations {
+import entities.FryCook;
+import entities.Person;
+import entities.function.TeachingBehavior;
+
+public class AggregationVsInheritanceTest {
 	// show difference between aggregation and inheritance
 	
 	public static void main(String[] args) {

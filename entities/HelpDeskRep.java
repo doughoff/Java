@@ -1,4 +1,4 @@
-package friday;
+package entities;
 
 public class HelpDeskRep extends Person {
 	

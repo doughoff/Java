@@ -1,8 +1,10 @@
-package thursday;
+package entities.tests;
 
-public class DogTest {
+import entities.DogSimple;
+
+public class DogSimpleTest {
 	public static void main(String[] args) {
-		Dog spot = new Dog();
+		DogSimple spot = new DogSimple();
 		spot.setName("Spot the dog");
 		spot.jump();
 		spot.setSound("yip");

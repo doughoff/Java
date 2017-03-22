@@ -1,4 +1,6 @@
-package friday;
+package entities;
+
+import entities.function.TeachingBehavior;
 
 public class FryCook extends Person {
 	private String restaurant;

@@ -1,13 +1,13 @@
-package thursday;
+package datatypes.arrays;
 
 import java.util.Arrays;
 
-public class MainTalk {
+public class MainArgs {
 	//----------------- data definition ? - no
-	// a data structure is only for an entity class
-	// we are a utility class
+		// a data structure is only for an entity class
+		// this is a utility class
 	//----------------- processes ? maybe
-	
+		
 	//----------------- testing
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(args));
