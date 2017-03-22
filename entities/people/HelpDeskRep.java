@@ -1,4 +1,4 @@
-package entities;
+package entities.people;
 
 public class HelpDeskRep extends Person {
 	

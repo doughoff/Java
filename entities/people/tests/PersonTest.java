@@ -1,8 +1,8 @@
-package entities.tests;
+package entities.people.tests;
 
 import java.util.*;
 
-import entities.PersonSimple;
+import entities.people.PersonSimple;
 
 public class PersonTest {
 	public static void main(String[] args) {

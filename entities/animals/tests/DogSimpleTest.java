@@ -1,6 +1,6 @@
-package entities.tests;
+package entities.animals.tests;
 
-import entities.DogSimple;
+import entities.animals.DogSimple;
 
 public class DogSimpleTest {
 	public static void main(String[] args) {

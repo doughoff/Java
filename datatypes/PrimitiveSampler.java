@@ -1,6 +1,6 @@
 package datatypes;
 
-public class DataTypes {
+public class PrimitiveSampler {
 	public static void main(String[] args) {
 		byte b;
 		short s;

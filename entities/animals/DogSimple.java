@@ -1,4 +1,6 @@
-package entities;
+package entities.animals;
+
+import entities.people.PersonSimple;
 
 public class DogSimple {
 	//---------------------------------- data definition
