@@ -9,26 +9,25 @@ public class IteratorLoops {
 		for (int i = 0; i < 10; i++) {
 			ints.add(i);
 		}
-		System.out.println("basic toString()");
+		System.out.println("sysout the collection");
 		System.out.println(ints);
 
-		System.out.println("\nno iterator");
+		System.out.println("\nforeach loop with no iterator");
 		// no iterator and for loop
+		for (Integer integer : ints) {
+			System.out.print(integer + ", ");
+		}
+
+		System.out.println("\n\nfor loop with no iterator");
 		for (int i = 0; i < ints.size(); i++) {
 			System.out.print(ints.get(i) + ", ");
 		}
-		System.out.println("\niterator v1");
-		// iterator versions
-		for (Iterator<Integer> iterator = ints.iterator(); iterator.hasNext();) {
+
+		Iterator<Integer> iterator = ints.iterator();
+		System.out.println("\n\nfor loop with iterator");
+		while (iterator.hasNext()) {
 			int i = iterator.next();
 			System.out.print(ints.get(i) + ", ");
 		}
-		System.out.println("\niterator v2");
-		Iterator<Integer> iterator2 = ints.iterator();
-		while (iterator2.hasNext()) {
-			int i = iterator2.next();
-			System.out.print(ints.get(i) + ", ");
-		}
-
 	}
 }

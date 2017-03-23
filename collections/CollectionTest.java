@@ -15,6 +15,7 @@ public class CollectionTest {
 
 		Collection<Object> maybeRecursive= new ArrayList<Object>();
 		maybeRecursive.addAll(aCollection);
+		// can you add yourself to your collection?
 		maybeRecursive.add(maybeRecursive);
 		System.out.println(maybeRecursive);
 	}
