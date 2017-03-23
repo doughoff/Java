@@ -17,5 +17,6 @@ public class CommandLineSet {
 		for (String arg : commandLineArgs) {
 			System.out.println(arg);
 		}
+		
 	}
 }
