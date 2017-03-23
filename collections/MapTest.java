@@ -3,6 +3,7 @@ package collections;
 import java.util.*;
 
 public class MapTest {
+	
 	public static void main(String[] args) {
 		Map<String, String> aHashMap = new HashMap<>();
 		aHashMap.put("Game1", "tic tac toe");
