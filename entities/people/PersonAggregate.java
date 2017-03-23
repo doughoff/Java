@@ -2,7 +2,7 @@ package entities.people;
 
 import entities.function.TeachingBehavior;
 
-public class Person {
+public class PersonAggregate {
 	private String name;
 	private TeachingBehavior teachingTraining;  // aggregating behavior
 	public String getName() {
@@ -18,11 +18,11 @@ public class Person {
 		this.teachingTraining = teachingTraining;
 	}
 
-	public Person() {
+	public PersonAggregate() {
 		this("Doug Hoff", null);
 	}
 	
-	public Person(String name, TeachingBehavior teachingTraining) {
+	public PersonAggregate(String name, TeachingBehavior teachingTraining) {
 		super();
 		this.name = name;
 		this.teachingTraining = teachingTraining;
@@ -43,8 +43,8 @@ public class Person {
 		}
 	}
 	//  a factory method
-	public Person createTeacher(){
-		Person aTeacher = new Person();
+	public PersonAggregate createTeacher(){
+		PersonAggregate aTeacher = new PersonAggregate();
 		aTeacher.setTeachingTraining(new TeachingBehavior());
 		return aTeacher;
 	}

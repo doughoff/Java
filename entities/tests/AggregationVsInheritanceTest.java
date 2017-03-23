@@ -2,13 +2,13 @@ package entities.tests;
 
 import entities.function.TeachingBehavior;
 import entities.people.FryCook;
-import entities.people.Person;
+import entities.people.PersonAggregate;
 
 public class AggregationVsInheritanceTest {
 	// show difference between aggregation and inheritance
 	
 	public static void main(String[] args) {
-		Person p = new Person();
+		PersonAggregate p = new PersonAggregate();
 		p.talk();
 		// we can add a teaching object to Person so they can teach
 		p.setTeachingTraining(new TeachingBehavior());

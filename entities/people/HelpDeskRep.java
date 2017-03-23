@@ -1,6 +1,6 @@
 package entities.people;
 
-public class HelpDeskRep extends Person {
+public class HelpDeskRep extends PersonAggregate {
 	
 	public void answerPhone(){
 		System.out.println("Hello, what is your problem?");
@@ -13,14 +13,14 @@ public class HelpDeskRep extends Person {
 	public static void main(String[] args) {
 		HelpDeskRep fred = new HelpDeskRep();
 		FryCook herman = new FryCook();
-		Person mary = new Person();
+		PersonAggregate mary = new PersonAggregate();
 		fred.talk();
 		herman.talk();
 		mary.talk();
 		
-		Person[] people = {fred, herman, mary};
+		PersonAggregate[] people = {fred, herman, mary};
 		// use polymorphism
-		for (Person person : people) {
+		for (PersonAggregate person : people) {
 			person.talk();
 		}
 	}
