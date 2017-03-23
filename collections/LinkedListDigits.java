@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class LinkedListTest {
+public class LinkedListDigits {
 	public static void main(String[] args) {
 		List<Integer> anArrayList = new ArrayList<Integer>();
 		for (int i = 0 ; i < 10 ; i++) {

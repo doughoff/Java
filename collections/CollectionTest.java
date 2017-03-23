@@ -13,7 +13,7 @@ public class CollectionTest {
 		System.out.println(aCollection.add("dog"));
 		System.out.println(aCollection);
 
-		Collection maybeRecursive= new ArrayList();
+		Collection<Object> maybeRecursive= new ArrayList<Object>();
 		maybeRecursive.addAll(aCollection);
 		maybeRecursive.add(maybeRecursive);
 		System.out.println(maybeRecursive);
