@@ -7,8 +7,10 @@ public class CommandLineSet {
 	public static void main(String[] args) {
 		// convert array to List
 		List<String> argList = Arrays.asList(args);
-
+		System.out.println(argList);
+		
 		// put args into a set
+		System.out.println("---------Putting args in a set");
 		Set<String> commandLineArgs = new HashSet<String>(argList);
 
 		// print out set
