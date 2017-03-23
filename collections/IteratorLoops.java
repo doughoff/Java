@@ -26,8 +26,7 @@ public class IteratorLoops {
 		Iterator<Integer> iterator = ints.iterator();
 		System.out.println("\n\nfor loop with iterator");
 		while (iterator.hasNext()) {
-			int i = iterator.next();
-			System.out.print(ints.get(i) + ", ");
+			System.out.print(iterator.next() + ", ");
 		}
 	}
 }
