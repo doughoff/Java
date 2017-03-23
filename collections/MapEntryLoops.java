@@ -13,6 +13,7 @@ public class MapEntryLoops {
 		System.out.println(aHashMap);
 		System.out.println();
 		
+		System.out.println("---------------- Hard to read loop");
 		Set<Map.Entry<String, String>> keyValues = aHashMap.entrySet();
 		if (keyValues != null) {
 			Iterator<Map.Entry<String, String>> i = keyValues.iterator();
@@ -24,7 +25,7 @@ public class MapEntryLoops {
 		}
 
 		System.out.println("---------------- Recommended loop");
-		for (Map.Entry pair : aHashMap.entrySet()) {
+		for (Map.Entry<String,String> pair : aHashMap.entrySet()) {
 			System.out.printf("Key: %s = Value: %s\n", pair.getKey(), pair.getValue());
 		}
 
