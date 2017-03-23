@@ -8,6 +8,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class CommandLineSortedSet {
+	// args = one two one three one four one five one six one
 	public static void main(String[] args) {
 		// convert array to List
 		List<String> argList = Arrays.asList(args);
