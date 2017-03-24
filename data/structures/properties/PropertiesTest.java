@@ -1,4 +1,4 @@
-package collections;
+package data.structures.properties;
 
 import java.io.*;
 import java.util.*;

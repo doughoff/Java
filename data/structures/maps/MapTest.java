@@ -1,4 +1,4 @@
-package collections;
+package data.structures.maps;
 
 import java.util.*;
 

@@ -2,7 +2,7 @@ package entities.people;
 
 import entities.function.TeachingBehavior;
 
-public class FryCook extends PersonAggregate {
+public class FryCook extends PersonWithBehavior {
 	private String restaurant;
 	public FryCook() {
 		this("Doug the cook", null, "Good Food Cafe");

@@ -1,6 +1,6 @@
 package entities.animals;
 
-import entities.people.PersonSimple;
+import entities.people.Person;
 
 public class DogFriday {
 	//----------------------------------- data structure
@@ -8,7 +8,7 @@ public class DogFriday {
 	private int age;
 	private boolean isMale;
 	private String breed;
-	private PersonSimple owner;
+	private Person owner;
 	//----------------------------------- getters and setters
 	public String getName() {
 		return name;
@@ -34,20 +34,20 @@ public class DogFriday {
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}
-	public PersonSimple getOwner() {
+	public Person getOwner() {
 		return owner;
 	}
-	public void setOwner(PersonSimple owner) {
+	public void setOwner(Person owner) {
 		this.owner = owner;
 	}
 	//----------------------------------- constructors
 	public DogFriday() {
-		this("Matt", 1, true, "Mutt", new PersonSimple());
+		this("Matt", 1, true, "Mutt", new Person());
 		// should use new Person("Doug", 22, false) if available
 		this.getOwner().setInfo("Doug", 22, false);
 	}
 	public DogFriday(String name, int age, boolean isMale, String breed, 
-			PersonSimple owner) {
+			Person owner) {
 		super();                // creates the Object core
 		this.name = name;
 		this.age = age;
@@ -66,7 +66,7 @@ public class DogFriday {
 		DogFriday mutt = new DogFriday();
 		System.out.println(mutt);
 		DogFriday fido = new DogFriday("Fido", 23, true, "Golden Retriever", 
-				new PersonSimple());
+				new Person());
 		System.out.println(fido);
 	}
 }

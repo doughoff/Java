@@ -1,12 +1,12 @@
 package entities.animals;
 
-import entities.people.PersonSimple;
+import entities.people.Person;
 
 public class DogAggregate {
 	//--------------------------------- data definition
 	private String breed;
 	private String name;
-	private PersonSimple owner;
+	private Person owner;
 	
 	//--------------------------------- processes
 	public void printInfo() {
@@ -19,7 +19,7 @@ public class DogAggregate {
 		DogAggregate rover = new DogAggregate();
 		rover.breed = "Pug";
 		rover.name = "Rover";
-		rover.owner = new PersonSimple();
+		rover.owner = new Person();
 		// rover.owner.name = "Doug";
 		rover.owner.setInfo("Doug", 22, false);
 		rover.owner.printInfo();

@@ -1,20 +1,20 @@
 package entities.people;
 
-public class PersonSimple {
+public class Person {
 	private String firstName;
 	private String lastName;
 	private int age;
 	private boolean isMale;
 	
 	//------------------------------------------------------- constructors
-	public PersonSimple() {
+	public Person() {
 		this("First name", "Last name", 10, true);
 	}	
-	public PersonSimple(String firstName, String lastName) {
+	public Person(String firstName, String lastName) {
 		this(firstName, lastName, 10, true);
 	}
 	
-	public PersonSimple(String firstName, String lastName, int age, boolean isMale) {
+	public Person(String firstName, String lastName, int age, boolean isMale) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -68,7 +68,7 @@ public class PersonSimple {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		PersonSimple other = (PersonSimple) obj;
+		Person other = (Person) obj;
 		if (lastName == null) {
 			if (other.lastName != null)
 				return false;

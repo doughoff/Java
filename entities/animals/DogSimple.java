@@ -1,19 +1,19 @@
 package entities.animals;
 
-import entities.people.PersonSimple;
+import entities.people.Person;
 
 public class DogSimple {
 	//---------------------------------- data definition
 	private String name;
 	private String breed;
-	private PersonSimple owner;
+	private Person owner;
 	private String sound;
-	private static PersonSimple vet;
+	private static Person vet;
 	public static final String SPECIES;
 	static {
 		SPECIES = "Canis lupus";
 		// initialize static vars, run db access if necessary
-		setVet(new PersonSimple());
+		setVet(new Person());
 		getVet().setInfo("Dr. Doggie", 45, true);
 	}
 	//--------------------------------- gets and sets
@@ -34,10 +34,10 @@ public class DogSimple {
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}
-	public PersonSimple getOwner() {
+	public Person getOwner() {
 		return owner;
 	}
-	public void setOwner(PersonSimple owner) {
+	public void setOwner(Person owner) {
 		this.owner = owner;
 	}
 	public String getSound() {
@@ -46,10 +46,10 @@ public class DogSimple {
 	public void setSound(String sound) {
 		this.sound = sound;
 	}
-	public static PersonSimple getVet() {
+	public static Person getVet() {
 		return vet;
 	}
-	public static void setVet(PersonSimple vet) {
+	public static void setVet(Person vet) {
 		DogSimple.vet = vet;
 	}
 	//---------------------------------- processes
@@ -81,7 +81,7 @@ public class DogSimple {
 		DogSimple.jumpStatic(spike);  // call static method
 		
 		// work on the owner
-		spike.setOwner(new PersonSimple());
+		spike.setOwner(new Person());
 		spike.getOwner().setInfo("John", 22, false);
 		spike.getOwner().printInfo();
 		// show vet

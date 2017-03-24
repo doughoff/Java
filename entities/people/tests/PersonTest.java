@@ -2,13 +2,13 @@ package entities.people.tests;
 
 import java.util.*;
 
-import entities.people.PersonSimple;
+import entities.people.Person;
 
 public class PersonTest {
 	public static void main(String[] args) {
-		Set<PersonSimple> persons = new HashSet<PersonSimple>();
-		PersonSimple john = new PersonSimple("John", "Sasser");
-		PersonSimple bobby = new PersonSimple("Bobby", "Sasser");
+		Set<Person> persons = new HashSet<Person>();
+		Person john = new Person("John", "Sasser");
+		Person bobby = new Person("Bobby", "Sasser");
 		System.out.println(bobby.equals(john));
 		
 		persons.add(john);

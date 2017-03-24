@@ -1,4 +1,4 @@
-package collections;
+package data;
 
 import java.awt.GraphicsEnvironment;
 import java.util.*;
