@@ -3,9 +3,9 @@ package data.structures.maps;
 import java.util.*;
 
 public class SystemPropertiesMap {
-	private static void print(Map<String,String> map) {
+	private static void print(Map<String,String> mapOfStrings) {
 		System.out.println("---------------------------------------");
-		for (Map.Entry<String,String> pair : map.entrySet()) {
+		for (Map.Entry<String,String> pair : mapOfStrings.entrySet()) {
 			System.out.printf("%-30s = %s\n", pair.getKey(), pair.getValue());
 		}
 	}

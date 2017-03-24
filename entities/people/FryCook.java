@@ -1,8 +1,9 @@
 package entities.people;
 
+import entities.association.PersonWhoTeaches;
 import entities.function.TeachingBehavior;
 
-public class FryCook extends PersonWithBehavior {
+public class FryCook extends PersonWhoTeaches {
 	private String restaurant;
 	public FryCook() {
 		this("Doug the cook", null, "Good Food Cafe");

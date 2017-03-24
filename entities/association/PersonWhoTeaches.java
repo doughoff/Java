@@ -1,10 +1,12 @@
-package entities.people;
+package entities.association;
 
 import entities.function.TeachingBehavior;
 
-public class PersonWithBehavior {
+public class PersonWhoTeaches {
 	private String name;
-	private TeachingBehavior teachingTraining;  // aggregating behavior
+	private TeachingBehavior teachingTraining;  // associated behavior
+	
+	//---------------------------------------------- getters and setters
 	public String getName() {
 		return name;
 	}
@@ -17,17 +19,16 @@ public class PersonWithBehavior {
 	public void setTeachingTraining(TeachingBehavior teachingTraining) {
 		this.teachingTraining = teachingTraining;
 	}
-
-	public PersonWithBehavior() {
+	//---------------------------------------------- constructors
+	public PersonWhoTeaches() {
 		this("Doug Hoff", null);
 	}
-	
-	public PersonWithBehavior(String name, TeachingBehavior teachingTraining) {
+	public PersonWhoTeaches(String name, TeachingBehavior teachingTraining) {
 		super();
 		this.name = name;
 		this.teachingTraining = teachingTraining;
 	}
-	
+	//---------------------------------------------- instance methods
 	@Override
 	public String toString() {
 		return "Person [name=" + name + ", teachingTraining=" + teachingTraining + "]";
@@ -35,6 +36,7 @@ public class PersonWithBehavior {
 	public void talk(){
 		System.out.println("I'm talking...");
 	}
+	// delegate to instance
 	public void teach(){
 		if (this.teachingTraining == null){
 			System.out.println("I don't know how to teach.");
@@ -43,8 +45,8 @@ public class PersonWithBehavior {
 		}
 	}
 	//  a factory method
-	public PersonWithBehavior createTeacher(){
-		PersonWithBehavior aTeacher = new PersonWithBehavior();
+	public PersonWhoTeaches createTeacher(){
+		PersonWhoTeaches aTeacher = new PersonWhoTeaches();
 		aTeacher.setTeachingTraining(new TeachingBehavior());
 		return aTeacher;
 	}

@@ -1,6 +1,8 @@
 package entities.people;
 
-public class HelpDeskRep extends PersonWithBehavior {
+import entities.association.PersonWhoTeaches;
+
+public class HelpDeskRep extends PersonWhoTeaches {
 	
 	public void answerPhone(){
 		System.out.println("Hello, what is your problem?");
@@ -13,14 +15,14 @@ public class HelpDeskRep extends PersonWithBehavior {
 	public static void main(String[] args) {
 		HelpDeskRep fred = new HelpDeskRep();
 		FryCook herman = new FryCook();
-		PersonWithBehavior mary = new PersonWithBehavior();
+		PersonWhoTeaches mary = new PersonWhoTeaches();
 		fred.talk();
 		herman.talk();
 		mary.talk();
 		
-		PersonWithBehavior[] people = {fred, herman, mary};
+		PersonWhoTeaches[] people = {fred, herman, mary};
 		// use polymorphism
-		for (PersonWithBehavior person : people) {
+		for (PersonWhoTeaches person : people) {
 			person.talk();
 		}
 	}

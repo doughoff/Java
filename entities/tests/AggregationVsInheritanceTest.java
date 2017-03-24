@@ -1,14 +1,14 @@
 package entities.tests;
 
+import entities.association.PersonWhoTeaches;
 import entities.function.TeachingBehavior;
 import entities.people.FryCook;
-import entities.people.PersonWithBehavior;
 
 public class AggregationVsInheritanceTest {
 	// show difference between aggregation and inheritance
 	
 	public static void main(String[] args) {
-		PersonWithBehavior p = new PersonWithBehavior();
+		PersonWhoTeaches p = new PersonWhoTeaches();
 		p.talk();
 		// we can add a teaching object to Person so they can teach
 		p.setTeachingTraining(new TeachingBehavior());
