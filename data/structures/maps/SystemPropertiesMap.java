@@ -2,8 +2,9 @@ package data.structures.maps;
 
 import java.util.*;
 
-public class PropertiesMap {
+public class SystemPropertiesMap {
 	public static void main(String[] args) {
+		@SuppressWarnings({ "unchecked", "rawtypes" })
 		SortedMap<String, String> systemProperties 
 			= new TreeMap(System.getProperties());
 		
