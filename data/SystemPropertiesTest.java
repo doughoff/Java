@@ -1,4 +1,4 @@
-package data.structures.properties;
+package data;
 
 import java.util.*;
 
