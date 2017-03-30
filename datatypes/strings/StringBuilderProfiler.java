@@ -2,12 +2,13 @@ package datatypes.strings;
 
 public class StringBuilderProfiler {
 	public static void main(String[] args) {
-		String aString = "abc", bString = "def";
+		String aString = "abc";
+		String bString = "def";
 		StringBuilder sb = new StringBuilder("abc");
 		
 		long start = System.currentTimeMillis();
 		for (int i = 0; i <= 100000; i++) {
-			aString += bString;
+			aString = aString + bString;
 			System.out.print((i % 10000 == 0) ? "." : "");
 		}
 		long stop = System.currentTimeMillis();

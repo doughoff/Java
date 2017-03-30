@@ -1,6 +1,7 @@
 package datatypes;
 
 public class PrimitiveSampler {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		byte b;
 		short s;

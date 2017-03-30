@@ -4,7 +4,6 @@ public class TestProcessorThreading implements Runnable {
 
 	private int numberOfThreads;
 	private int totalIterations;
-	private long totalTimeMs;
 	private Thread[] threads;
 
 	public static void main(String[] args) {
@@ -20,7 +19,6 @@ public class TestProcessorThreading implements Runnable {
 	}
 
 	private void createAndRunThreads() {
-		long startAll = System.currentTimeMillis();
 		for (int i = 0; i < this.numberOfThreads; i++) {
 			Thread t = new Thread(this);
 			t.setName("t" + i);

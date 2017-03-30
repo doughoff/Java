@@ -3,7 +3,6 @@ package control.exercises;
 public class FizzBuzz {
 	public static void main(String[] args) {
 //		Write a program that prints the numbers from 1 to 100. 
-		boolean doNotPrintNumber = false;
 		boolean mod3, mod5;
 		for (int i = 1; i <= 100; i++) {
 			mod3 = (i%3 == 0); 

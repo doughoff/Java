@@ -2,6 +2,7 @@ package datatypes.strings;
 
 public class StringProfiling {
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		String aString = "";
 
 		long start = System.currentTimeMillis();
