@@ -2,8 +2,8 @@ package control.branching;
 
 public class MainController {
 	public static void main(String[] args) {
-		basics.HelloWorld.main(null);
-		basics.HelloWorld.main(null);
+		procedural.HelloWorld.main(null);
+		procedural.HelloWorld.main(null);
 		
 		printIntermissionMessage();
 		control.branching.MainController.printIntermissionMessage();
@@ -11,8 +11,8 @@ public class MainController {
 		String message = "It's time for a break.";
 		printIntermissionMessage(message);
 		
-		basics.HelloWorld.main(null);
-		basics.HelloWorld.main(null);
+		procedural.HelloWorld.main(null);
+		procedural.HelloWorld.main(null);
 	
 	}
 
