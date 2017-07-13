@@ -1,6 +1,8 @@
 package entities.people;
 
 public class Person {
+	
+	//---------------------------------------------- data structure
 	private String firstName;
 	private String lastName;
 	private int age;
@@ -13,7 +15,6 @@ public class Person {
 	public Person(String firstName, String lastName) {
 		this(firstName, lastName, 10, true);
 	}
-	
 	public Person(String firstName, String lastName, int age, boolean isMale) {
 		super();
 		this.firstName = firstName;
@@ -21,6 +22,7 @@ public class Person {
 		this.age = age;
 		this.isMale = isMale;
 	}
+
 	//------------------------------------------------------- getters and setters
 	
 	public String getFirstName() {
@@ -81,7 +83,6 @@ public class Person {
 	}
 	public void setInfo(String string, int i, boolean b) {
 		// TODO Auto-generated method stub
-		
 	}
 
 }

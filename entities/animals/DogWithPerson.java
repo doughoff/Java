@@ -3,9 +3,9 @@ package entities.animals;
 import entities.people.Person;
 
 public class DogWithPerson {
-	//--------------------------------- data definition
-	private String breed;
+	//--------------------------------- data structure
 	private String name;
+	private String breed;
 	private Person owner;
 	
 	//--------------------------------- processes
