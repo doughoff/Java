@@ -1,7 +1,7 @@
 package entities.animals.tests;
 
 import entities.animals.DogMammal;
-import entities.animals.HuntingDog;
+import entities.animals.HuntingDogMammal;
 import entities.animals.Mammal;
 
 public class PolymorphismTest {
@@ -17,7 +17,7 @@ public class PolymorphismTest {
 		Object o = new Object();
 		Mammal m = new DogMammal();
 		DogMammal d = new DogMammal();
-		HuntingDog hd = new HuntingDog();
+		HuntingDogMammal hd = new HuntingDogMammal();
 		
 		Object[] objects = {o, m, d, hd};
 		printAll(objects);

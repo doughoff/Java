@@ -2,14 +2,16 @@ package procedural.methods;
 
 public class RadiusMathTests {
 	
-	// methods to create
 //	Calculate the area of a circle (pi * r2)
 	public static double calcAreaOfCircle(double radius) {
+		System.out.println("Calculating area of circle...");
 		return Math.PI * radius * radius;
 	}
 	
 //	Calculate the volume of a sphere ( 4/3 * pi * r3)
 	public static double calcVolumeOfSphere(double radius) {
+		System.out.println("Calculating volume of sphere...");
+		// remember that 4/3 = 1 in whole number math
 		return 4/3.0 * Math.PI * Math.pow(radius, 3);
 	}
 	
@@ -20,19 +22,21 @@ public class RadiusMathTests {
 	}
 	
 	public static void main(String[] args) {
-		
-//		initialize variables
+//		initialize / setup
 		double radius = 5.0;
-//		call methods
+		System.out.println("Using radius of " + radius);
+		
+//		call method
 		double result = calcAreaOfCircle(radius);
-//		// print
-		System.out.println(result);
+//		print result
+		System.out.println("Area: " + result);
+		
+//		call and print
 		result = calcVolumeOfSphere(radius);
-//		// print
-		System.out.println(result);
+		System.out.println("Volume: " + result);
 		
 		result = calculateDiameterOfCircle(radius);
-		System.out.println(result);
+		System.out.println("Diameter: " + result);
 	}
 
 

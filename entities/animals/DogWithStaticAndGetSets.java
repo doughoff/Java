@@ -2,20 +2,21 @@ package entities.animals;
 
 import entities.people.Person;
 
-public class DogSimple {
-	//---------------------------------- data definition
-	private String name;
-	private String breed;
-	private Person owner;
-	private String sound;
-	private static Person vet;
+public class DogWithStaticAndGetSets {
+	// --------------------------------- class data structure
 	public static final String SPECIES;
+	private static Person vet;
 	static {
 		SPECIES = "Canis lupus";
 		// initialize static vars, run db access if necessary
 		setVet(new Person());
 		getVet().setInfo("Dr. Doggie", 45, true);
 	}
+	//---------------------------------- object data structure
+	private String name;
+	private String breed;
+	private Person owner;
+	private String sound;
 	//--------------------------------- gets and sets
 	// allow access, run data rules
 	
@@ -50,16 +51,20 @@ public class DogSimple {
 		return vet;
 	}
 	public static void setVet(Person vet) {
-		DogSimple.vet = vet;
+		DogWithStaticAndGetSets.vet = vet;
 	}
-	//---------------------------------- processes
-	public void jump() {					  // must be in this Dog class
-		System.out.println("I'm jumping...");
-		System.out.println("(" + this.getName() + " likes jumping.)");
-	}
-	public static void jumpStatic(DogSimple dog){   // can be in any class
+	//---------------------------------- static methods
+	// could be in any class - invoke with Dog.jumpStatic(adog)
+	public static void jumpStatic(DogWithStaticAndGetSets dog){   
 		System.out.println("I'm jumping...");
 		System.out.println("(" + dog.getName() + " likes jumping.)");
+	}
+
+	//---------------------------------- instance methods
+	// must be in Dog class - invoke with adog.jump()
+	public void jump() {					  
+		System.out.println("I'm jumping...");
+		System.out.println("(" + this.getName() + " likes jumping.)");
 	}
 	public void bark() {
 		System.out.println(this.getSound());
@@ -69,27 +74,27 @@ public class DogSimple {
 			this.bark();
 		}
 	}
-	//---------------------------------- testing
+	//---------------------------------- test
 	public static void main(String[] args) {
 		// datatype ref = new datatype();
-		DogSimple spike = new DogSimple();
+		DogWithStaticAndGetSets spike = new DogWithStaticAndGetSets();
 		System.out.println(spike.getName());
 		spike.setName("Spike");   		// convenience method
 		spike.setName(new String());		// create empty string
 		spike.setName(new String("Spike the Dog"));  // overloaded constructor
 		spike.jump();	  // call instance method
-		DogSimple.jumpStatic(spike);  // call static method
+		DogWithStaticAndGetSets.jumpStatic(spike);  // call static method
 		
 		// work on the owner
 		spike.setOwner(new Person());
 		spike.getOwner().setInfo("John", 22, false);
 		spike.getOwner().printInfo();
 		// show vet
-		DogSimple.getVet().printInfo();
+		DogWithStaticAndGetSets.getVet().printInfo();
 		spike.setSound("bark");
 		spike.bark();
 		spike.bark(4);
-		System.out.println("A dog is of species " + DogSimple.SPECIES);
+		System.out.println("A dog is of species " + DogWithStaticAndGetSets.SPECIES);
 	}
 
 

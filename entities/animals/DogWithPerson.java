@@ -2,7 +2,7 @@ package entities.animals;
 
 import entities.people.Person;
 
-public class DogAggregate {
+public class DogWithPerson {
 	//--------------------------------- data definition
 	private String breed;
 	private String name;
@@ -16,7 +16,7 @@ public class DogAggregate {
 	}	
 	//--------------------------------- testing
 	public static void main(String[] args) {
-		DogAggregate rover = new DogAggregate();
+		DogWithPerson rover = new DogWithPerson();
 		rover.breed = "Pug";
 		rover.name = "Rover";
 		rover.owner = new Person();

@@ -1,12 +1,12 @@
 package entities.animals;
 
-public class HuntingDog extends DogMammal {
+public class HuntingDogMammal extends DogMammal {
 	private String huntsFor;
 	//------------------------------------------ constructors
-	public HuntingDog() {
+	public HuntingDogMammal() {
 		this("long golden", "Rover",2, "Lab", true, "ducks");
 	}
-	public HuntingDog(String hairType, String name, int age, String breed, boolean isMale, String huntsFor) {
+	public HuntingDogMammal(String hairType, String name, int age, String breed, boolean isMale, String huntsFor) {
 		super(hairType, name, age, breed, isMale);
 		this.huntsFor = huntsFor;
 	}	
@@ -29,7 +29,7 @@ public class HuntingDog extends DogMammal {
 	}
 	//-------------------------------------------testing
 	public static void main(String[] args) {
-		HuntingDog hd = new HuntingDog();
+		HuntingDogMammal hd = new HuntingDogMammal();
 		System.out.println(hd);
 		hd.setHuntsFor("ducks");
 		hd.bark();

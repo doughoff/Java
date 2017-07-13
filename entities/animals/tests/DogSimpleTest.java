@@ -1,10 +1,10 @@
 package entities.animals.tests;
 
-import entities.animals.DogSimple;
+import entities.animals.DogWithStaticAndGetSets;
 
 public class DogSimpleTest {
 	public static void main(String[] args) {
-		DogSimple spot = new DogSimple();
+		DogWithStaticAndGetSets spot = new DogWithStaticAndGetSets();
 		spot.setName("Spot the dog");
 		spot.jump();
 		spot.setSound("yip");

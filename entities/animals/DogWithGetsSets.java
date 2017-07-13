@@ -2,7 +2,7 @@ package entities.animals;
 
 import entities.people.Person;
 
-public class DogFriday {
+public class DogWithGetsSets {
 	//----------------------------------- data structure
 	private String name;
 	private int age;
@@ -41,12 +41,12 @@ public class DogFriday {
 		this.owner = owner;
 	}
 	//----------------------------------- constructors
-	public DogFriday() {
+	public DogWithGetsSets() {
 		this("Matt", 1, true, "Mutt", new Person());
 		// should use new Person("Doug", 22, false) if available
 		this.getOwner().setInfo("Doug", 22, false);
 	}
-	public DogFriday(String name, int age, boolean isMale, String breed, 
+	public DogWithGetsSets(String name, int age, boolean isMale, String breed, 
 			Person owner) {
 		super();                // creates the Object core
 		this.name = name;
@@ -63,9 +63,9 @@ public class DogFriday {
 	}
 	//----------------------------------- testing
 	public static void main(String[] args) {
-		DogFriday mutt = new DogFriday();
+		DogWithGetsSets mutt = new DogWithGetsSets();
 		System.out.println(mutt);
-		DogFriday fido = new DogFriday("Fido", 23, true, "Golden Retriever", 
+		DogWithGetsSets fido = new DogWithGetsSets("Fido", 23, true, "Golden Retriever", 
 				new Person());
 		System.out.println(fido);
 	}
