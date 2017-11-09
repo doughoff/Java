@@ -45,7 +45,7 @@ public class Egg {
 
 	@Override
 	public String toString() {
-		return size + " " + color;
+		return size + "-" + color;
 	}
 
 }
