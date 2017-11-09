@@ -36,7 +36,7 @@ public class DogWithStaticFields {
 				+ " a tail.");
 		
 		// data can be modified
-		System.out.println("All dogs belong to the " + kennelName);
+		System.out.println("All dogs belong to the " + DogWithStaticFields.kennelName);
 		DogWithStaticFields.kennelName = "New Barks for Old Dogs Kennel";
 		System.out.println("All dogs now belong to the " + kennelName);
 		
