@@ -1,6 +1,6 @@
 package oo.basic;
 
-public class NonObjectDog {
+public class DogDataWithoutObject {
 	// a method that uses Dog data
 	public static void bark(String dogName, String dogBreed, int dogAge) {
 		System.out.println(dogName + " is barking.");

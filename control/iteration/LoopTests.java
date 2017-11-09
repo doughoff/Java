@@ -8,9 +8,10 @@ public class LoopTests {
 //		10 11 12 13 14 15 16 17 18 19
 //		20 …
 //		One loop only
+		
 		System.out.print("Print formatted numbers");
 		System.out.println(" from 0 to 99");
-		System.out.println("LFCR here");
+		System.out.println();
 		
 		//set up the loop 0 - 99
 		for (int i = 0; i < 10; i++) {

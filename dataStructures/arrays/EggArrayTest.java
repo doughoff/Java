@@ -7,6 +7,8 @@ public class EggArrayTest {
 	public static void main(String[] args) {
 		Egg egg = new Egg();
 		System.out.println(egg);
+		
+		// create a 1d container for the Egg objects
 		Egg[] carton = new Egg[12];
 		
 		// print the object/carton
@@ -19,15 +21,15 @@ public class EggArrayTest {
 		carton[0] = egg;
 		System.out.println(Arrays.toString(carton));
 		
-		// create a container for cartons
+		// create a 2d container for cartons
 		Egg[][] crate = new Egg[30][]; // holds any size of carton
 		crate[1] = carton;
 		
-		// create a container for crates
+		// create a 3d container for crates
 		Egg[][][] truck = new Egg[96][][];
 		truck[95] = crate;
 		
-		// print out just the top level of the arrays/the truck
+		// print out just the top level (level 3) of the arrays/the truck
 		System.out.println(Arrays.toString(truck));
 		
 		// print out all levels of the arrays/the truck

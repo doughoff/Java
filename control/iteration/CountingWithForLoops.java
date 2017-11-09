@@ -1,6 +1,6 @@
 package control.iteration;
 
-public class CountingLoops {
+public class CountingWithForLoops {
 	public static void main(String[] args) {  // main
 //		Print from 1 to 25
 		for (int i = 1; i <= 25; i++) {

@@ -1,6 +1,6 @@
 package control.iteration;
 
-public class Loops {
+public class LoopsWhile {
 	public static void main(String[] args) {
 		int i = 5;
 		while (true) {
