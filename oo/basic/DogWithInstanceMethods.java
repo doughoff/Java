@@ -1,7 +1,5 @@
 package oo.basic;
 
-import wednesday.Cat;
-
 public class DogWithInstanceMethods {
 	//---------------------- data definition and initialization
 	private String name = "Baron the Dog";
@@ -27,6 +25,15 @@ public class DogWithInstanceMethods {
 		}
 	}
 	
+	public void goOutside() {
+		System.out.println(this.name + " is going outside.");	
+	}	
+	
+	public void printFields() {
+		System.out.printf("DogWithInstanceMethods: %s (%s) is %d year%s old\n",
+				this.name, this.breed, this.age, (this.age==1 ? "" : "s") );
+	}
+	
 	// testing
 	public static void main(String[] args) {
 		new DogWithInstanceMethods();  // Dog has no reference, a lost dog
@@ -38,7 +45,14 @@ public class DogWithInstanceMethods {
 		dog2.name = "Gillie";
 		aDog.barkAtAnotherDog(dog2);
 		
-		// extra method
+		// extra methods
 		aDog.bark(3);
+		dog2.goOutside();
+		// dog2.age = 1; // to test printFields singular/plural
+		dog2.printFields();
 	}
+
+
+
+
 }

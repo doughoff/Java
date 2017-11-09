@@ -1,4 +1,4 @@
-package dataStructures.structures.utilties;
+package dataStructures.utilties;
 
 import java.util.*;
 

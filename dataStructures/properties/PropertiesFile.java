@@ -1,4 +1,4 @@
-package dataStructures.structures.properties;
+package dataStructures.properties;
 
 import java.io.*;
 import java.util.Properties;

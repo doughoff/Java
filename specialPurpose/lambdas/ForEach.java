@@ -1,4 +1,4 @@
-package dataStructures.structures.lambdas;
+package specialPurpose.lambdas;
 
 import java.util.*;
 

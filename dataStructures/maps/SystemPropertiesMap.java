@@ -1,4 +1,4 @@
-package dataStructures.structures.maps;
+package dataStructures.maps;
 
 import java.util.*;
 

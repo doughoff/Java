@@ -1,4 +1,4 @@
-package dataStructures.structures.sets;
+package dataStructures.sets;
 
 import java.util.*;
 

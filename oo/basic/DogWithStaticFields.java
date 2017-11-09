@@ -7,10 +7,17 @@ public class DogWithStaticFields {
 	private int age = 2;
 	private Person owner;
 	private Person vet;
+	
 	//---------------- static data (class data - one piece of data for all objects)
 	// the same for all dogs but can be modified by any object
-	private static boolean hasATail = true;
-	private static String kennelName = "Barking Dog Kennel";
+	private static boolean hasATail;
+	private static String kennelName;
+	
+	static {
+		// run code to access a database here to initialize static variables
+		hasATail = true;
+		kennelName = "Barking Dog Kennel";
+	}
 	
 	// testing
 	public static void main(String[] args) {
