@@ -1,13 +1,6 @@
 package oo.basic;
 
 public class DogWithStaticFields {
-	//---------------------- data definition and initialization
-	private String name = "Baron the Dog";
-	private String breed = "Husky/Shepherd";
-	private int age = 2;
-	private Person owner;
-	private Person vet;
-	
 	//---------------- static data (class data - one piece of data for all objects)
 	// the same for all dogs but can be modified by any object
 	private static boolean hasATail;
@@ -18,6 +11,13 @@ public class DogWithStaticFields {
 		hasATail = true;
 		kennelName = "Barking Dog Kennel";
 	}
+	
+	//---------------------- data definition and initialization
+	private String name = "Baron the Dog";
+	private String breed = "Husky/Shepherd";
+	private int age = 2;
+	private Person owner;
+	private Person vet;
 	
 	// testing
 	public static void main(String[] args) {

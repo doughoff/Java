@@ -1,4 +1,6 @@
-package specialPurpose.printing;
+package oo.formatting;
+
+import java.util.Calendar;
 
 public class PrintFFormatting {
 	// a varargs (variable argument) method - any number of arguments
@@ -26,6 +28,8 @@ public class PrintFFormatting {
 		System.out.printf("I want a %s with %s and %s.\n", "Corvette", 
 				"sun roof", "a new set of tires");
 		System.out.printf("My %d %s cost $%,.2f\n", 2016, "computer", 2343.21789);
+		Calendar c = Calendar.getInstance( );
+		System.out.printf("\n%tr \n%tc \n%tl:%tM" , c, c, c, c);
 		
 //		reusing arguments
 		System.out.printf("My %s cost $%.2f.\nI like my %1$s.", "computer", 2442.32789);
