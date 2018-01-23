@@ -1,7 +1,5 @@
 package entities;
 
-import java.util.Arrays;
-
 public class Egg {
 	// ----------------------------- data definition
 	private String color;
@@ -25,19 +23,15 @@ public class Egg {
 	public void setColor(String color) {
 		this.color = color;
 	}
-
 	public String getSize() {
 		return size;
 	}
-
 	public void setSize(String size) {
 		this.size = size;
 	}
-
 	public boolean isBad() {
 		return isBad;
 	}
-
 	public void setBad(boolean isBad) {
 		this.isBad = isBad;
 	}

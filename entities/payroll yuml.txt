@@ -1,0 +1,5 @@
+#yuml.me
+[Comptroller|printCheckForEmployee(emp)]-[Employee | findById(id)],
+[Comptroller]-[Check],
+[Check| printForEmployee(emp)]-[PrintLayout|createCheckLayout()],
+[PayRate | findHourlyWageForPayGrade(grade)]- [Check]

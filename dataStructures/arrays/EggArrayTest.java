@@ -16,6 +16,7 @@ public class EggArrayTest {
 		
 		// print the items in the carton
 		System.out.println(Arrays.toString(carton));
+		System.out.println();
 		
 		// add an egg and print
 		carton[0] = egg;
@@ -30,14 +31,16 @@ public class EggArrayTest {
 		truck[95] = crate;
 		
 		// print out just the top level (level 3) of the arrays/the truck
+		System.out.println("-------------------------------toString()");
 		System.out.println(Arrays.toString(truck));
 		
 		// print out all levels of the arrays/the truck
+		System.out.println("--------------------------------deepToString()");
 		System.out.println(Arrays.deepToString(truck));
 		
 		// print out all cartons with for/each
 		// print out contents of truck
-		System.out.println("----------------------------- for-each of crates");
+		System.out.println("------------------------------- for-each of crates");
 		for (Egg[][] item : truck) {
 			System.out.print(item + ", ");
 		}

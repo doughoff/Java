@@ -1,4 +1,4 @@
-package oo.formatting;
+package specialPurpose.formatting;
 
 public class NumberFormats {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package oo.formatting;
+package specialPurpose.formatting;
 
 import java.text.*;
 import java.util.Locale;
