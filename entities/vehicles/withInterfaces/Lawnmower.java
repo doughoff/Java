@@ -3,7 +3,8 @@ import oo.interfaces.*;
 
 public class Lawnmower 
 	extends ReelMower
-	implements IMotorized, IControlPower, IControlDirection {
+	implements IMotorized, IControlPower, 
+	 IControlDirection {
 
 	@Override
 	public void turn(double degrees) {

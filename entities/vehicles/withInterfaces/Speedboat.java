@@ -7,14 +7,9 @@ public class Speedboat
 
 	@Override
 	public void startMotor() {
-		// TODO Auto-generated method stub
-		
 	}
-
 	@Override
 	public void stopMotor() {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

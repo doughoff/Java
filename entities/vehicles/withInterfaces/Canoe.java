@@ -6,9 +6,6 @@ public class Canoe
 	IControlPower, ITransport {
 
 	@Override
-	public void turn(double degrees) {
-	}
-	@Override
 	public void carry(String cargo) {	
 	}
 	@Override
@@ -22,6 +19,9 @@ public class Canoe
 	}
 	@Override
 	public void brakeTo(double mph) {
+	}
+	@Override
+	public void turn(double degrees) {
 	}
 	
 }
