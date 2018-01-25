@@ -12,7 +12,6 @@ public enum DaysOfWeek {
 	//-------------------------------- methods
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return this.englishFullName;
 	}
 	public void print(){
