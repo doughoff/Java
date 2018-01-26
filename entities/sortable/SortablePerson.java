@@ -1,11 +1,25 @@
-package specialPurpose.sorting;
+package entities.sortable;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import java.util.*;
 
 public class SortablePerson implements Comparable<SortablePerson> {
 	private String nameFirst;
 	private String nameLast;
+	public static SortablePerson[] peopleArray;
+	public static List<SortablePerson> peopleList;
+	static {
+		peopleArray = new SortablePerson[] {
+				new SortablePerson("Andrew", "Estes"),
+				new SortablePerson("Bryan", "Morby"),
+				new SortablePerson("Dale", "Lake"),
+				new SortablePerson("Ellen", "Kang"),
+				new SortablePerson("Jeremy", "Taylor"),
+				new SortablePerson("John", "Fiarkowski"),
+				new SortablePerson("Doug", "Hoff")				
+		};
+		peopleList = Arrays.asList(peopleArray);
+	}
+	
 	public String getNameLast() {
 		return nameLast;
 	}
@@ -42,42 +56,18 @@ public class SortablePerson implements Comparable<SortablePerson> {
 	}
 	
 	public static void main(String[] args) {
-		SortablePerson[] people = {
-				new SortablePerson("Joan", "Fontaine"),
-				new SortablePerson("Errol", "Flynn"),
-				new SortablePerson("Geena", "Davis"),
-				new SortablePerson("Bette", "Davis"),
-				new SortablePerson("Olivia", "de Havilland")
-		};
-		System.out.println(Arrays.toString(people));
+		System.out.println(Arrays.toString(peopleArray));
 		System.out.println();
 		// use the default sort
-		Arrays.sort(people);
+		Arrays.sort(peopleArray);
 		System.out.println("---------------------- after sorting");
-		System.out.println(Arrays.toString(people));
+		System.out.println(Arrays.toString(peopleArray));
 		System.out.println();
 		// sort using a comparator
-		Arrays.sort(people, new PersonIgnoreCaseComparator());
+		Arrays.sort(peopleArray, new FirstNamePersonComparator());
 		System.out.println("---------------------- after sorting with comparator");
-		System.out.println(Arrays.toString(people));
+		System.out.println(Arrays.toString(peopleArray));
 		
 	}
-}
-
-class PersonIgnoreCaseComparator implements Comparator<SortablePerson> {
-
-	@Override
-	public int compare(SortablePerson p0, SortablePerson p1) {
-		// 1st level sort on last name
-		int result = p0.getNameLast().compareToIgnoreCase(p1.getNameLast());
-		if (result == 0){
-			// 2nd level sort on first name
-			result = p0.getNameFirst().compareToIgnoreCase(p1.getNameFirst());
-		}
-		// show calls by Arrays.sort()
-		System.out.printf("Comparing %s to %s and returning %d\n", p0, p1, result);
-		return result;
-	}
-
 }
 

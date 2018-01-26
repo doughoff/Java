@@ -1,16 +1,16 @@
 package entities.animals;
 
-public abstract class Mammal {
+public abstract class MammalAbstract {
 	//------------------------------ data structure
 	private String hairType;
 	//------------------------------ abstract methods
 	public abstract void eat();
 	//------------------------------ constructors
-	public Mammal() {
+	public MammalAbstract() {
 		this("white fuzzy");
 	}
 	
-	public Mammal(String hairType) {
+	public MammalAbstract(String hairType) {
 		super();
 		this.hairType = hairType;
 	}
@@ -30,7 +30,7 @@ public abstract class Mammal {
 	}
 	
 	public static void main(String[] args) {
-		Mammal specialMammal = new Mammal() {		
+		MammalAbstract specialMammal = new MammalAbstract() {		
 			@Override
 			public void eat() {
 				System.out.println("I'm eating like a special mammal.");

@@ -2,7 +2,7 @@ package entities.animals.tests;
 
 import entities.animals.DogMammal;
 import entities.animals.HuntingDogMammal;
-import entities.animals.Mammal;
+import entities.animals.MammalAbstract;
 
 public class PolymorphismTest {
 	
@@ -15,7 +15,7 @@ public class PolymorphismTest {
 	
 	public static void main(String[] args) {
 		Object o = new Object();
-		Mammal m = new DogMammal();
+		MammalAbstract m = new DogMammal();
 		DogMammal d = new DogMammal();
 		HuntingDogMammal hd = new HuntingDogMammal();
 		

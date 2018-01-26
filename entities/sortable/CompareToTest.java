@@ -1,4 +1,4 @@
-package specialPurpose.sorting;
+package entities.sortable;
 
 public class CompareToTest {
 	public static void main(String[] args) {

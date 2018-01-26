@@ -1,6 +1,6 @@
 package entities.animals;
 
-public class DogMammal extends Mammal {
+public class DogMammal extends MammalAbstract {
 	//--------------------------- data structure
 	private String name;
 	private int age;

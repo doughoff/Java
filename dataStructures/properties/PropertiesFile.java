@@ -5,7 +5,8 @@ import java.util.Properties;
 
 public class PropertiesFile {
 public static void main(String[] args) {
-	// create properties in memory and set a few key/values
+	// create properties in memory and 
+	// set a few key/values
 	Properties settings = new Properties();
 	settings.setProperty("gui.font","Courier New");
 	settings.setProperty("gui.bgcolor","HH0000");
