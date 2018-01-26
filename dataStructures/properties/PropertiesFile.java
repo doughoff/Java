@@ -12,7 +12,8 @@ public static void main(String[] args) {
 	settings.setProperty("gui.bgcolor","HH0000");
 	try {
 		// store the properties on disk
-		FileOutputStream settingsOutStream = new FileOutputStream("settings.properties");
+		FileOutputStream settingsOutStream = 
+				new FileOutputStream("settings.properties");
 		settings.store(settingsOutStream,"header comment");
 		// a date time comment will be added under your comment
 		

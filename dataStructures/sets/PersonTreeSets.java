@@ -2,20 +2,20 @@ package dataStructures.sets;
 
 import java.util.*;
 
+import entities.people.PersonSortable;
 import entities.sortable.FirstNamePersonComparator;
-import entities.sortable.SortablePerson;
 
 public class PersonTreeSets {
 	public static void main(String[] args) {
 		// create a TreeSet from array
-		Set<SortablePerson> peopleSet =
-				new TreeSet<SortablePerson>(Arrays.asList(SortablePerson.peopleArray));
+		Set<PersonSortable> peopleSet =
+				new TreeSet<PersonSortable>(Arrays.asList(PersonSortable.peopleArray));
 		// print showing default sort
 			System.out.println(peopleSet);
 			
 		// create a TreeSet with comparator 
 			Set peopleByFirstNames = 
-				new TreeSet<SortablePerson>
+				new TreeSet<PersonSortable>
 					(new FirstNamePersonComparator());
 			peopleByFirstNames.addAll(peopleSet);
 		// print showing new sort
@@ -24,7 +24,7 @@ public class PersonTreeSets {
 			// create a TreeSet with lambda 
 			System.out.println("Sort by lambda----------");
 			Set peopleByLastNameLength = 
-				new TreeSet<SortablePerson>
+				new TreeSet<PersonSortable>
 					((p1, p2)-> p1.getNameLast().length() - 
 							p2.getNameLast().length());
 			peopleByLastNameLength.addAll(peopleSet);

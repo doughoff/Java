@@ -2,10 +2,12 @@ package entities.sortable;
 
 import java.util.Comparator;
 
-public class FirstNamePersonComparator implements Comparator<SortablePerson> {
+import entities.people.PersonSortable;
+
+public class FirstNamePersonComparator implements Comparator<PersonSortable> {
 
 		@Override
-		public int compare(SortablePerson p0, SortablePerson p1) {
+		public int compare(PersonSortable p0, PersonSortable p1) {
 			// 1st level sort on last name
 			int result = p0.getNameLast().compareToIgnoreCase(p1.getNameLast());
 			if (result == 0){

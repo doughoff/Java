@@ -3,8 +3,8 @@ package entities.people;
 public class Person {
 	
 	//---------------------------------------------- data structure
-	private String firstName;
-	private String lastName;
+	private String nameFirst;
+	private String nameLast;
 	private int age;
 	private boolean isMale;
 	
@@ -17,25 +17,23 @@ public class Person {
 	}
 	public Person(String firstName, String lastName, int age, boolean isMale) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.nameFirst = firstName;
+		this.nameLast = lastName;
 		this.age = age;
 		this.isMale = isMale;
 	}
-
 	//------------------------------------------------------- getters and setters
-	
-	public String getFirstName() {
-		return firstName;
+	public String getNameFirst() {
+		return nameFirst;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setNameFirst(String nameFirst) {
+		this.nameFirst = nameFirst;
 	}
-	public String getLastName() {
-		return lastName;
+	public String getNameLast() {
+		return nameLast;
 	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setNameLast(String nameLast) {
+		this.nameLast = nameLast;
 	}
 	public int getAge() {
 		return age;
@@ -54,13 +52,13 @@ public class Person {
 	public int hashCode() {
 		final int prime = 37;
 		int result = 1;
-		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
-		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
+		result = prime * result + ((nameFirst == null) ? 0 : nameFirst.hashCode());
+		result = prime * result + ((nameLast == null) ? 0 : nameLast.hashCode());
 		return result;
 	}
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + "]";
+		return "Person [firstName=" + nameFirst + ", lastName=" + nameLast + "]";
 	}
 	@Override
 	public boolean equals(Object obj) {
@@ -71,10 +69,10 @@ public class Person {
 		if (getClass() != obj.getClass())
 			return false;
 		Person other = (Person) obj;
-		if (lastName == null) {
-			if (other.lastName != null)
+		if (nameLast == null) {
+			if (other.nameLast != null)
 				return false;
-		} else if (!lastName.equals(other.lastName))
+		} else if (!nameLast.equals(other.nameLast))
 			return false;
 		return true;
 	}

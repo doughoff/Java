@@ -1,21 +1,22 @@
-package entities.sortable;
+package entities.people;
 
 import java.util.*;
+import entities.sortable.*;
 
-public class SortablePerson implements Comparable<SortablePerson> {
+public class PersonSortable implements Comparable<PersonSortable> {
 	private String nameFirst;
 	private String nameLast;
-	public static SortablePerson[] peopleArray;
-	public static List<SortablePerson> peopleList;
+	public static PersonSortable[] peopleArray;
+	public static List<PersonSortable> peopleList;
 	static {
-		peopleArray = new SortablePerson[] {
-				new SortablePerson("Andrew", "Estes"),
-				new SortablePerson("Bryan", "Morby"),
-				new SortablePerson("Dale", "Lake"),
-				new SortablePerson("Ellen", "Kang"),
-				new SortablePerson("Jeremy", "Taylor"),
-				new SortablePerson("John", "Fiarkowski"),
-				new SortablePerson("Doug", "Hoff")				
+		peopleArray = new PersonSortable[] {
+				new PersonSortable("Andrew", "Estes"),
+				new PersonSortable("Bryan", "Morby"),
+				new PersonSortable("Dale", "Lake"),
+				new PersonSortable("Ellen", "Kang"),
+				new PersonSortable("Jeremy", "Taylor"),
+				new PersonSortable("John", "Fiarkowski"),
+				new PersonSortable("Doug", "Hoff")				
 		};
 		peopleList = Arrays.asList(peopleArray);
 	}
@@ -32,7 +33,7 @@ public class SortablePerson implements Comparable<SortablePerson> {
 	public void setNameFirst(String nameFirst) {
 		this.nameFirst = nameFirst;
 	}	
-	public SortablePerson(String nameFirst, String nameLast) {
+	public PersonSortable(String nameFirst, String nameLast) {
 		super();
 		this.setNameFirst(nameFirst);
 		this.setNameLast(nameLast);
@@ -43,7 +44,7 @@ public class SortablePerson implements Comparable<SortablePerson> {
 	}
 
 	@Override
-	public int compareTo(SortablePerson o) {
+	public int compareTo(PersonSortable o) {
 		// 1st level sort on last name
 		int result = this.getNameLast().compareTo(o.getNameLast());
 		if (result == 0){

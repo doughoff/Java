@@ -7,6 +7,7 @@ public class StringProfiling {
 
 		long start = System.currentTimeMillis();
 		for (int i = 0; i <= 10000000; i++) { // 10,000,000
+			// uses cache to create if needed
 			aString = "abc";
 			System.out.print((i % 100000 == 0) ? "." : "");
 		} // 100,000
@@ -16,6 +17,7 @@ public class StringProfiling {
 
 		start = System.currentTimeMillis();
 		for (int i = 0; i <= 10000000; i++) {
+			// always creates a new object
 			aString = new String("abc");
 			System.out.print((i % 100000 == 0) ? "." : "");
 		}
