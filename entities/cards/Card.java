@@ -10,11 +10,6 @@ public class Card {
 		initializeSingleDeck();
 	}
 
-	public Card(CardSuit suit, CardValue value) {
-		super();
-		this.suit = suit;
-		this.value = value;
-	}
 	public static void initializeSingleDeck() {
 		singleDeck.clear();
 		for (CardSuit cs: CardSuit.values()) {
@@ -22,8 +17,31 @@ public class Card {
 				singleDeck.add(new Card(cs, cv));
 			}
 		}
-	}
+	}	
 	
+	public Card(CardSuit suit, CardValue value) {
+		super();
+		this.suit = suit;
+		this.value = value;
+	}
+
+	
+	public CardSuit getSuit() {
+		return suit;
+	}
+
+	public void setSuit(CardSuit suit) {
+		this.suit = suit;
+	}
+
+	public CardValue getValue() {
+		return value;
+	}
+
+	public void setValue(CardValue value) {
+		this.value = value;
+	}
+
 	@Override
 	public String toString() {
 		return value  + " of " + suit ;
