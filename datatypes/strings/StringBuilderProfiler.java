@@ -13,7 +13,7 @@ public class StringBuilderProfiler {
 		}
 		long stop = System.currentTimeMillis();
 		
-		System.out.println("\nTime for String+String is: " + (stop - start));
+		System.out.println("\nTime in ms for String+String is: " + (stop - start));
 		
 		start = System.currentTimeMillis();
 		for (int i = 0; i <= 100000; i++) {
@@ -22,7 +22,7 @@ public class StringBuilderProfiler {
 		}
 		stop = System.currentTimeMillis();
 		
-		System.out.println("\nTime for StringBuilder is: " + (stop - start));
+		System.out.println("\nTime in ms for StringBuilder is: " + (stop - start));
 
 	}
 }

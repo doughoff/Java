@@ -17,7 +17,17 @@ public class Card {
 				singleDeck.add(new Card(cs, cv));
 			}
 		}
+	}
+	public static void shuffleSingleDeck(int ...numberOfTimes) {
+		if(numberOfTimes.length == 0 ) {
+			Collections.shuffle(singleDeck);
+		} else {
+			for (int i = 0; i < numberOfTimes[0]; i++) {
+				Collections.shuffle(singleDeck);
+			}
+		}
 	}	
+
 	
 	public Card(CardSuit suit, CardValue value) {
 		super();
