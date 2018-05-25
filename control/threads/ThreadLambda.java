@@ -12,12 +12,12 @@ public class ThreadLambda {
 			public void run() {
 				process();
 			}
-		});
+		}).start();
 
 		// new Thread(lambda run function)
-		// Arrays.sort(array, lambda compare function)
-		Runnable r = () -> process();
+
 		Thread t1 = new Thread(() -> process());
+		Runnable r = () -> process();
 		Thread t2 = new Thread(r);
 		t1.start();
 		t2.start();

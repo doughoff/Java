@@ -3,13 +3,13 @@ package control.threads;
 public class TestProcessorThreading implements Runnable {
 
 	private int numberOfThreads;
-	private int totalIterations;
+	private long totalIterations;
 	private Thread[] threads;
 
 	public static void main(String[] args) {
 		TestProcessorThreading test = new TestProcessorThreading();
-		test.numberOfThreads = 2;
-		test.totalIterations = 2000000000;
+		test.numberOfThreads = 3;
+		test.totalIterations = 2000000000L;
 
 		test.threads = new Thread[test.numberOfThreads];
 		long start = System.currentTimeMillis();
