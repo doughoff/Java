@@ -7,7 +7,7 @@ public class Meerkat {
 		// change to replace cat, Cat, and cats by dog or dogs
 		// e.g. Pattern p = Pattern.compile("cat");
 		Pattern p = Pattern.compile("your regex here");
-		String input = "one cat, two cats lying in the yard \n";
+		String input = "one cat, two cats playing in catsup \n";
 		input += "one cat, two cats in the catalog \n";
 		input += "one cat, two cats located my Russian Blue \n";
 		input += "one Meercat, and two big Cats in the city zoo";
@@ -57,3 +57,5 @@ public class Meerkat {
 // Pattern p = Pattern.compile("(?i)\\bcat(?=[s\\W])");
 // answer 2
 // Pattern p = Pattern.compile("(?i)\\bcat(?=[s\\W]?\\b)");
+//test alternative answer from Austin
+// Pattern p = Pattern.compile("(?i)\\bcat(?=[s]?\\b)");
