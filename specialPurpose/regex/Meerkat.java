@@ -5,6 +5,7 @@ import java.util.regex.*;
 public class Meerkat {
 	public static void main(String[] args) throws Exception {
 		// change to replace cat, Cat, and cats by dog or dogs
+		// e.g. Pattern p = Pattern.compile("cat");
 		Pattern p = Pattern.compile("your regex here");
 		String input = "one cat, two cats lying in the yard \n";
 		input += "one cat, two cats in the catalog \n";
