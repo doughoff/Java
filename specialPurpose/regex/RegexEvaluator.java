@@ -40,7 +40,7 @@ public class RegexEvaluator {
 //	words with a capital letter (4 matches)
 
 	public static void main(String[] args) throws Exception {
-		outputMatches("(?im)d.\\w*");
+		outputMatches("find this pattern");
 	}
 
 }
