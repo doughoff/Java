@@ -32,6 +32,13 @@ public class RegexEvaluator {
 //		(?i)o.{5}d
 //		o.\w*
 //		Same as the last one with a space before it
+//	----------------------------------
+//	Write patterns to find:
+//	The line with the letters "it" at the beginning (not a capital I). (4 matches) 
+//	And try case insensitive too! (5 matches)
+//	words ending in "s“ (20 matches)
+//	words with a capital letter (4 matches)
+
 	public static void main(String[] args) throws Exception {
 		outputMatches("(?im)d.\\w*");
 	}
