@@ -36,7 +36,7 @@ public class RegexEvaluator {
 //	Write patterns to find:
 //	The line with the letters "it" at the beginning (not a capital I). (4 matches) 
 //	And try case insensitive too! (5 matches)
-//	words ending in "s“ (20 matches)
+//	words ending in "s" (20 matches)
 //	words with a capital letter (4 matches)
 
 	public static void main(String[] args) throws Exception {
