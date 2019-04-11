@@ -38,13 +38,13 @@ public class MetadataTest {
 			int numberOfColumns = rsmd.getColumnCount();
 			// print column headers
 			for (int i = 1; i <= numberOfColumns; i++) {
-				System.out.print((i > 1) ? ",  " : "");
+				System.out.print((i > 1) ? "," : "");
 				System.out.print(rsmd.getColumnName(i));
 			}
 			System.out.println();
 			while (rs.next()) {
 				for (int i = 1; i <= numberOfColumns; i++) {
-					System.out.print((i > 1) ? ",  " : "");
+					System.out.print((i > 1) ? "," : "");
 					System.out.print(rs.getString(i));
 				}
 				System.out.println("");

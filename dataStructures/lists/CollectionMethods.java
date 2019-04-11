@@ -11,9 +11,9 @@ public class CollectionMethods {
 		anyCollection.remove("old element that appears first");
 		
 		// toArray methods
-		// Object[] values = anyCollection.toArray( ); // vague
-		// String[] values = anyCollection.toArray( ); // error
-		// String[] values = (String[])anyCollection.toArray( ); // error
+		// Object[] values = anyCollection.toArray(); // vague
+		// String[] values = anyCollection.toArray(); // error
+		// String[] values = (String[])anyCollection.toArray(); // error
 		String[] values = (String[])anyCollection.toArray(new String[0]);
 		System.out.println(Arrays.toString(values));
 	}

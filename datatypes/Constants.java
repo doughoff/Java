@@ -1,6 +1,6 @@
 package datatypes;
 
-import javafx.scene.paint.Color;
+import java.awt.Color;
 
 public class Constants {
 	static {
@@ -17,6 +17,6 @@ public class Constants {
 	public static void main(String[] args) {
 		System.out.println(Constants.MINIMUM_WAGE_MO);
 		System.out.println(Math.PI);
-		System.out.println(Color.ALICEBLUE);
+		System.out.println(Color.LIGHT_GRAY);
 	}
 }

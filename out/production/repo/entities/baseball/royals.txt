@@ -1,0 +1,50 @@
+	Ned Yost	Manager
+22		Don Wakamatsu	Bench Coach
+58		Dave Eiland	Pitching Coach
+21		Dale Sveum	Hitting Coach
+34		Brian Buchanan	Assistant Hitting Coach
+23		Mike Jirschele	Third Base Coach
+18		Rusty Kuntz	First Base Coach
+57		Doug Henry	Bullpen Coach
+80		Ryan Eigsti	Bullpen Catcher
+28		Pedro Grifol	Catching Coach
+
+
+Pitchers
+#	 	Name	B/T	Ht	Wt	DOB
+54		Scott Alexander	L/L	6'2"	190lbs	7/10/89
+41		Danny Duffy	L/L	6'3"	205lbs	12/21/88
+39		Jason Hammel	R/R	6'6"	225lbs	9/2/82
+40		Kelvin Herrera	R/R	5'10"	200lbs	12/31/89
+55		Nathan Karns	R/R	6'3"	225lbs	11/25/87
+31		Ian Kennedy	R/R	6'0"	200lbs	12/19/84
+77		Zach Lovvorn	R/R	6'0"	185lbs	5/26/94
+26		Mike Minor	R/L	6'4"	210lbs	12/26/87
+48		Joakim Soria	R/R	6'3"	200lbs	5/18/84
+64		Matt Strahm	R/L	6'3"	185lbs	11/12/91
+51		Jason Vargas	L/L	6'0"	215lbs	2/2/83
+34		Travis Wood	R/L	5'11"	175lbs	2/6/87
+32		Chris Young	R/R	6'10"	255lbs	5/25/79
+Catchers
+#	 	Name	B/T	Ht	Wt	DOB
+9		Drew Butera	R/R	6'1"	200lbs	8/9/83
+13		Salvador Perez	R/R	6'3"	240lbs	5/10/90
+Infield
+#	 	Name	B/T	Ht	Wt	DOB
+24		Christian Colon	R/R	5'10"	185lbs	5/14/89
+19		Cheslor Cuthbert	R/R	6'1"	190lbs	11/16/92
+2		Alcides Escobar	R/R	6'1"	185lbs	12/16/86
+35		Eric Hosmer	L/L	6'4"	225lbs	10/24/89
+15		Whit Merrifield	R/R	6'0"	195lbs	1/24/89
+27		Raul Mondesi	S/R	6'1"	185lbs	7/27/95
+8		Mike Moustakas	L/R	6'0"	215lbs	9/11/88
+Outfield
+#	 	Name	B/T	Ht	Wt	DOB
+14		Billy Burns	S/R	5'9"	170lbs	8/30/89
+6		Lorenzo Cain	R/R	6'2"	205lbs	4/13/86
+4		Alex Gordon	L/R	6'1"	220lbs	2/10/84
+0		Terrance Gore	R/R	5'7"	165lbs	6/8/91
+37		Brandon Moss	L/R	6'1"	210lbs	9/16/83
+7		Peter O'Brien	R/R	6'4"	235lbs	7/15/90
+16		Paulo Orlando	R/R	6'2"	210lbs	11/1/85
+12		Jorge Soler	R/R	6'4"	215lbs	2/25/92
