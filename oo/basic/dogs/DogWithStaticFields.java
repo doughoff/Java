@@ -1,4 +1,6 @@
-package oo.basic;
+package oo.basic.dogs;
+
+import oo.basic.Person;
 
 public class DogWithStaticFields {
 	//---------------- static data (class data - one piece of data for all objects)

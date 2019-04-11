@@ -1,4 +1,6 @@
-package oo.basic;
+package oo.basic.dogs;
+
+import oo.basic.Cat;
 
 public class DogWithInstanceMethods {
 	//---------------------- data definition and initialization

@@ -1,4 +1,6 @@
-package oo.basic;
+package oo.basic.dogs;
+
+import oo.basic.Person;
 
 public class DogWithManyReferences {
 	//---------------------- data definition and initialization

@@ -1,4 +1,4 @@
-package oo.basic;
+package oo.basic.dogs;
 
 public class DogWithConstructors {
 	// ---------------------- data definition

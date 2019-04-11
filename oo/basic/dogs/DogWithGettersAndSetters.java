@@ -1,4 +1,6 @@
-package oo.basic;
+package oo.basic.dogs;
+
+import oo.basic.Rules;
 
 public class DogWithGettersAndSetters {
 	// ---------------------- data definition and initialization
