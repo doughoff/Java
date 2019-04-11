@@ -1,5 +1,0 @@
-#yuml.me,
-[Comptroller|printCheckForEmployee(id)]-[Employee|id:int;name:String; payGrade:String; hoursWorked:double | findById(id)], 
-[Check|printed:Date; amount:double| printForEmployee(emp)]-[Comptroller], 
-[Check]<>-[PrintLayout|description:String |createCheckLayout()], 
-[PayRate | findHourlyWageForPayGrade(grade)]- [Check]
