@@ -3,12 +3,19 @@ package oo.methods;
 public class RadiusObject {
 	//----------------------------------------------- data
 	private double radius;   // defaults to zero
+	private boolean isSolid;
 	//----------------------------------------------- getters and setters
 	public double getRadius() {
 		return radius;
 	}
 	public void setRadius(double radius) {
 		this.radius = radius;
+	}
+	public boolean isSolid() {
+		return isSolid;
+	}
+	public void setSolid(boolean isSolid) {
+		this.isSolid = isSolid;
 	}
 	//---------------------------------------------- constructors
 	public RadiusObject() {
@@ -32,6 +39,7 @@ public class RadiusObject {
 	}
 //	Calculate the volume of a sphere ( 4/3 * pi * r3)
 	public double calcVolumeOfSphere() {
+		this.setSolid(true);
 		return 4/3.0 * Math.PI * Math.pow(radius, 3);
 	}
 	// calculate diameter of circle

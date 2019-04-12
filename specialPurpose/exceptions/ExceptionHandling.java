@@ -1,6 +1,6 @@
 package specialPurpose.exceptions;
 
-import jdk.JavadocsExample;
+import specialPurpose.JavadocsExample;
 
 public class ExceptionHandling {
 	public static void main(String[] args) {

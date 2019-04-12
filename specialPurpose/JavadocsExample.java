@@ -1,4 +1,4 @@
-package jdk;
+package specialPurpose;
 
 import entities.Address;
 

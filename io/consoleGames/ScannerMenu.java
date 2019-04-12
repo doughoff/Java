@@ -1,8 +1,8 @@
-package specialPurpose.consoleGames;
+package io.consoleGames;
 
 import java.util.Scanner;
 
-public class ConsoleScanner {
+public class ScannerMenu {
 	public static void main(String[] args) {
 		Scanner inputStreamScanner = new Scanner(System.in);
 		String inputLine = "";
