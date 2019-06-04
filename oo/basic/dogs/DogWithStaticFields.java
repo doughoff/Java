@@ -15,7 +15,7 @@ public class DogWithStaticFields {
 	}
 	
 	//---------------------- data definition and initialization
-	private String name = "Baron the Dog";
+	private String name = "Baron the Big Dog";
 	private String breed = "Husky/Shepherd";
 	private int age = 2;
 	private Person owner;
