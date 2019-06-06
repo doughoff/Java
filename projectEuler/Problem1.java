@@ -24,18 +24,21 @@ public class Problem1 {
 		System.out.printf("The sum of all multiples of 3 or 5 "
 				+ "below %d is %,d.\n", maxExclusiveRange, this.sum);
 	} 
+	public void calcSum() {
+		for (candidate = 0; candidate < maxExclusiveRange; candidate++) {
+			if (candidateIsMultipleOf3Or5()) {
+				sum += candidate;
+			}
+		}
+	}
 	
 	public static void main(String[] args) {
 		Problem1 p1 = new Problem1();
-		
-		// calculate sum
-		for (p1.candidate = 0; p1.candidate < maxExclusiveRange; p1.candidate++) {
-			if (p1.candidateIsMultipleOf3Or5()) {
-				p1.sum += p1.candidate;
-			}
-		}
+		p1.calcSum();
 		p1.printSum();
 	}
+
+
 
 
 }
