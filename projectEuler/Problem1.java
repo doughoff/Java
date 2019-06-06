@@ -20,7 +20,7 @@ public class Problem1 {
 		return result;
 	}
 	
-	public  void printSum() {
+	public void printSum() {
 		System.out.printf("The sum of all multiples of 3 or 5 "
 				+ "below %d is %,d.\n", maxExclusiveRange, this.sum);
 	} 
