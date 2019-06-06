@@ -20,6 +20,11 @@ public class Problem1 {
 		return result;
 	}
 	
+	public  void printSum() {
+		System.out.printf("The sum of all multiples of 3 or 5 "
+				+ "below %d is %,d.\n", maxExclusiveRange, this.sum);
+	} 
+	
 	public static void main(String[] args) {
 		Problem1 p1 = new Problem1();
 		
@@ -29,13 +34,8 @@ public class Problem1 {
 				p1.sum += p1.candidate;
 			}
 		}
-		// print sum
-		printSum(p1);
-		
+		p1.printSum();
 	}
 
-	private static void printSum(Problem1 p1) {
-		System.out.printf("The sum of all multiples of 3 or 5 "
-				+ "below %d is %,d.\n", maxExclusiveRange, p1.sum);
-	}
+
 }
