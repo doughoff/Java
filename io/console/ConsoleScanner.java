@@ -1,4 +1,4 @@
-package io.consoleGames;
+package io.console;
 
 import java.util.Scanner;
 
@@ -38,7 +38,7 @@ public class ConsoleScanner {
 					System.err.println("Try again");
 					break;
 				}
-				}
+				} // switch
 			} // while
 		} // try
 	}

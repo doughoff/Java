@@ -1,4 +1,4 @@
-package io.consoleGames;
+package io.console;
 
 import java.util.Scanner;
 

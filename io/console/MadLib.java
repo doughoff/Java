@@ -1,4 +1,5 @@
-package io.consoleGames;
+package io.console;
+
 
 import java.util.Scanner;
 
@@ -8,17 +9,17 @@ public class MadLib {
 		Scanner scanner = new Scanner(System.in);
 		
 		String inputLine = "";
-		System.out.print("Enter your string: ");   // this is a PRINT
-		
-		inputLine = scanner.nextLine();
-		System.out.println("You said " + inputLine);
+
+//		System.out.print("Enter your string: ");   // this is a PRINT
+//		inputLine = scanner.nextLine();
+//		System.out.println("You said " + inputLine);
 		
 		// initialize MadLib
 		String madlib = "A vacation is when you take a trip to some %s place with your %s family. "
 				+ "Usually you go to some place near a/an %s or up on a/an %s.";
 		String promptAdjective = "Enter an adjective: ";
 		String promptNoun = "Enter a noun: ";
-		String prompt5Choices = "Enter a number: \n1 - duck\n2 - building\n3 - tractor\n4 - bird\n5 - computer: ";
+//		String prompt5Choices = "Enter a number: \n1 - duck\n2 - building\n3 - tractor\n4 - bird\n5 - computer: ";
 		String input1, input2, input3, input4, input5;
 		
 		// collect the data
@@ -31,18 +32,18 @@ public class MadLib {
 		System.out.print(promptNoun);
 		input4 = scanner.nextLine();
 		
-		System.out.println(prompt5Choices);
-		input5 = scanner.nextLine();
-		// test the input
-		switch (input5) {
-		case "1":
-			break;
-		case "2":
-			break;
-
-		default:
-			break;
-		}
+//		System.out.println(prompt5Choices);
+//		input5 = scanner.nextLine();
+//		// test the input
+//		switch (input5) {
+//		case "1":
+//			break;
+//		case "2":
+//			break;
+//
+//		default:
+//			break;
+//		}
 		
 		// print out the result
 		System.out.printf(madlib, input1, input2, input3, input4);
