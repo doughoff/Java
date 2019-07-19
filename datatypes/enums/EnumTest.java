@@ -1,5 +1,5 @@
-package oo.enums;
-import static oo.enums.DaysOfWeek.*;
+package datatypes.enums;
+import static datatypes.enums.DaysOfWeek.*;
 
 public class EnumTest {
 	public static void main(String[] args) {

@@ -1,5 +1,7 @@
 package entities.animals;
 
+import entities.function.TrickTraining;
+
 public class HuntingDog extends Dog {
 	private String game;
 	public HuntingDog() {

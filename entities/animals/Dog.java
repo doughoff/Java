@@ -2,6 +2,8 @@ package entities.animals;
 import entities.people.*;
 import static entities.validators.Validators.*;
 
+import entities.function.TrickTraining;
+
 public class Dog {
 	private String name;
 	private int age;
@@ -83,11 +85,11 @@ public class Dog {
 	}
 	public static void main(String[] args) {
 		Dog d2 = new Dog();
-		Dog d = new Dog("Fred",-1,false,140,new Person());
+		Dog d = new Dog( "Fred", -1, false, 140, new Person() );
 		//d.setName("Fred");
 		//d.setAge(5);
 		System.out.println(d);
-		d.setName("A");
+		d.setName("Al");
 		System.out.println(d);
 	}
 }

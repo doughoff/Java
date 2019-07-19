@@ -1,4 +1,4 @@
-package entities.animals;
+package entities.function;
 
 public class TrickTraining  {
 	private int numberOfTricksKnown;

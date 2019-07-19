@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import entities.people.*;
 
-public class PersonSortableLamdas {
+public class PersonSortableLambdas {
 	public static void main(String[] args) {
 		PersonSortable[] people = {
 				new PersonSortable("Andrew", "Smith"),

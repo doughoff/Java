@@ -8,7 +8,7 @@ public class TestProcessorThreading implements Runnable {
 
 	public static void main(String[] args) {
 		TestProcessorThreading test = new TestProcessorThreading();
-		test.numberOfThreads = 3;
+		test.numberOfThreads = 10;
 		test.totalIterations = 2000000000L;
 
 		test.threads = new Thread[test.numberOfThreads];

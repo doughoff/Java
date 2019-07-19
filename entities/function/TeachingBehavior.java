@@ -1,4 +1,4 @@
-package entities.functional;
+package entities.function;
 
 public class TeachingBehavior {
 	public void teach(){

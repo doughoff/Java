@@ -1,6 +1,6 @@
 package entities.association;
 
-import entities.functional.TeachingBehavior;
+import entities.function.TeachingBehavior;
 
 public class PersonWhoTeaches {
 	private String name;

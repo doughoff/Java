@@ -1,7 +1,7 @@
 package entities.tests;
 
 import entities.association.PersonWhoTeaches;
-import entities.functional.TeachingBehavior;
+import entities.function.TeachingBehavior;
 import entities.people.FryCook;
 
 public class AggregationVsInheritanceTest {

@@ -1,7 +1,7 @@
 package entities.people;
 
 import entities.association.PersonWhoTeaches;
-import entities.functional.TeachingBehavior;
+import entities.function.TeachingBehavior;
 
 public class FryCook extends PersonWhoTeaches {
 	private String restaurant;
